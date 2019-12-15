@@ -7,7 +7,6 @@
     "setup-dbs": "psql -f ./db/setup.sql",
     "test": "mocha spec/app.spec.js",
     "test-app": "mocha spec/app.spec.js",
-    "seed:prod": "NODE_ENV=production DB_URL=$(heroku config:get DATABASE_URL) knex seed:run",
     "start": "node listen.js"
   },
   "dependencies": {
