@@ -1,0 +1,10 @@
+DROP DATABASE
+CREATE DATABASE
+CREATE TABLE
+INSERT 0 1
+ users_id | username  | firstname | lastname |          email          |    password    |                                img_url                                 |         joined_at          
+----------+-----------+-----------+----------+-------------------------+----------------+------------------------------------------------------------------------+----------------------------
+        1 | jessJelly | jessica   | evans    | jess_evans123@gmail.com | myPassword@123 | https:                                                                +| 2019-12-15 12:54:47.651463
+          |           |           |          |                         |                | //i.pinimg.com/originals/0b/11/59/0b1159a00d745ddacc8da192f68fed5a.gif | 
+(1 row)
+
