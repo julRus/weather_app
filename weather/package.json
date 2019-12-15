@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "weather-app",
   "main": "index.js",
+  "engines": {
+    "node": "v12.9.0"
+  },
   "scripts": {
     "setup-dbs": "psql -f ./db/setup.sql",
     "test": "mocha spec/app.spec.js",
@@ -15,6 +18,7 @@
     "fs": "0.0.1-security",
     "knex": "^0.20.0",
     "node": "^13.3.0",
+    "nodejs": "0.0.0",
     "nodemon": "^2.0.2",
     "pg": "^7.12.1",
     "sams-chai-sorted": "^1.0.2"
