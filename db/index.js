@@ -2,6 +2,7 @@ const { Client } = require("pg");
 const dbConfig = require("./config");
 
 const db = new Client(dbConfig);
+console.log(dbConfig);
 
 db.connect()
   .then(() => {
