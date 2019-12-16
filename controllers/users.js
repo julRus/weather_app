@@ -6,6 +6,7 @@ exports.getUsers = (req, res) => {
       res.status(200).json(users);
     })
     .catch(err => {
+      console.log(err);
       res.status(500).send({ status: 500, msg: "Internal Server Error" });
     });
 };
