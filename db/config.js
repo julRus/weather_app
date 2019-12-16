@@ -1,4 +1,4 @@
-const { DB_URL } = process.env;
+const { DATABASE_URL } = process.env;
 
 const ENV = process.env.NODE_ENV || "development";
 const development = {
@@ -9,7 +9,7 @@ const development = {
   password: "myPassword"
 };
 
-const production = `${DB_URL}?ssl=true`;
+const production = `${DATABASE_URL}?ssl=true`;
 
 // const test = {
 //   host: "localhost",
