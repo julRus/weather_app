@@ -1,7 +1,17 @@
 const usersRouter = require("express").Router();
-const { getUsers } = require("../controllers/users");
+const {
+  getUsers,
+  getUserByUsername,
+  postUser,
+  deleteUser
+} = require("../controllers/users");
 
 usersRouter.route("/").get(getUsers);
+// .post(postUser);
+// .patch(patchUser);
+
+usersRouter.route("/username").get(getUserByUsername);
+// .delete(deleteUser);
 
 // const {
 //   getAreas,

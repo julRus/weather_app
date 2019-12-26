@@ -10,7 +10,8 @@
     "setup-dbs": "psql -f ./db/setup.sql",
     "test": "mocha spec/app.spec.js",
     "test-app": "mocha spec/app.spec.js",
-    "start": "node listen.js"
+    "start": "node listen.js",
+    "seed:prod": "NODE_ENV=production DATABASE_URL=$(heroku config:get DATABASE_URL) psql $(heroku config:get DATABASE_URL -a myweather-jul)\"?sslmode=require\" -f ./db/setup.sql"
   },
   "dependencies": {
     "cors": "^2.8.5",
