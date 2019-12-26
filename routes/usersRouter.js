@@ -6,11 +6,14 @@ const {
   deleteUser
 } = require("../controllers/users");
 
-usersRouter.route("/").get(getUsers);
+usersRouter
+  .route("/")
+  .get(getUsers)
+  .post(postUser);
 // .post(postUser);
 // .patch(patchUser);
 
-usersRouter.route("/username").get(getUserByUsername);
+usersRouter.route("/:username").get(getUserByUsername);
 // .delete(deleteUser);
 
 // const {

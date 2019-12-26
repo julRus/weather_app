@@ -1,19 +1,19 @@
--- DROP DATABASE IF EXISTS weather_app;
+DROP DATABASE IF EXISTS myweather_app;
 
--- CREATE DATABASE weather_app;
+CREATE DATABASE myweather_app;
 
--- \c weather_app;
+\c myweather_app;
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users
 (
   users_id SERIAL PRIMARY KEY,
-  username VARCHAR(100),
-  firstName VARCHAR(100),
-  lastName VARCHAR(100),
-  email VARCHAR(100),
-  password VARCHAR(50),
-  img_url VARCHAR(2083),
+  username VARCHAR(100) UNIQUE NOT NULL,
+  firstName VARCHAR(100) NOT NULL,
+  lastName VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  password VARCHAR(50) NOT NULL,
+  img_url VARCHAR(2083) NOT NULL,
   joined_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 

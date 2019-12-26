@@ -17,9 +17,8 @@ exports.getUsers = (req, res) => {
 };
 
 exports.getUserByUsername = (req, res) => {
-  console.log(req.params);
   fetchUserByUsername(req).then(user => {
-    res.status(200).json(user);
+    res.status(200).json({ user });
   });
 };
 

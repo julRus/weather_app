@@ -3,7 +3,7 @@ const { DATABASE_URL } = process.env;
 const ENV = process.env.NODE_ENV || "development";
 const development = {
   host: "localhost",
-  database: "weather_app",
+  database: "myweather_app",
   port: 5432,
   username: "julia",
   password: "myPassword"
